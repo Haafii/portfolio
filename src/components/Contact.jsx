@@ -6,7 +6,7 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-
+import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope, FaTwitter } from 'react-icons/fa'
 
 const Contact = () => {
   const formRef = useRef();
@@ -120,6 +120,23 @@ const Contact = () => {
           >
             {loading ? "Sending..." : "Send"}
           </button>
+          <div className="gap-10 flex align-center justify-center ">
+            <a href="https://github.com/Haafii" target="_blank">
+              <FaGithub className='text-3xl' />
+            </a>
+            <a href="https://www.linkedin.com/in/hafis-muhammed-27a913213/" target="_blank">
+              <FaLinkedin className='text-3xl' />
+            </a>
+            <a href="https://www.instagram.com/_______hafi_______/?next=%2F" target="_blank">
+              <FaInstagram className='text-3xl' />
+            </a>
+            <a href="https://twitter.com/___Hafi___" target="_blank">
+              <FaTwitter className='text-3xl' />
+            </a>
+            <a href="mailto: hafismuhammedtk@gmail.com" target="_blank">
+              <FaEnvelope className='text-3xl' />
+            </a>
+          </div>
         </form>
       </motion.div>
 
